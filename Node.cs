@@ -1,14 +1,16 @@
-﻿namespace CodingChallenge
+﻿using System;
+
+namespace CodingChallenge
 {
     public class Node<T>
     {
-        private readonly T _data;
-        private readonly Node<T> _next;
+        public T Data { get; }
+        public Node<T> Next { get; set; }
 
         public Node(T data, Node<T> next = null)
         {
-            _data = data;
-            _next = next;
+            Data = data;
+            Next = next;
         }
     }
 }
