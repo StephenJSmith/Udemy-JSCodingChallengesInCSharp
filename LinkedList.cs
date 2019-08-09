@@ -2,7 +2,7 @@
 {
     public class LinkedList<T>
     {
-        public Node<T> Head { get; private set; }
+        public Node<T> Head { get; set; }
 
         public LinkedList(Node<T> head = null)
         {
