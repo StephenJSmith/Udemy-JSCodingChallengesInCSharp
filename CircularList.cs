@@ -14,13 +14,13 @@
 
             while (node1.Next?.Next != null)
             {
-                if (node1.Next.Next == node0)
+                node0 = node0.Next;
+                node1 = node1.Next.Next;
+
+                if (node0 == node1)
                 {
                     return true;
                 }
-
-                node0 = node0.Next;
-                node1 = node1.Next.Next;
             }
 
             return false;
